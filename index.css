@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Inter Regular";
+  src: url("./Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter Bold";
+  src: url("./Inter/static/Inter-Bold.ttf");
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+section.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+div.card {
+  position: relative;
+  overflow: hidden;
+  width: 93px;
+  height: 329px;
+  transition-property: width;
+  transition-duration: 325ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0s;
+}
+div.card > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+article {
+  border-radius: 0 0 40px 40px;
+  position: absolute;
+  bottom: 0;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  /* background: linear-gradient(rgba(255, 255, 255,0.3), rgba(0, 0, 0,0.5)); */
+  width: 100%;
+  backdrop-filter: blur(0.5px);
+}
+div.content {
+  display: none;
+}
+div.content p {
+  font-size: 14px;
+  font-family: "Inter Regular";
+}
+div.content h4 {
+  font-size: 20px;
+  font-family: "Inter Bold";
+}
+article > div.logo {
+  width: 56px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.card:hover {
+  width: 419px;
+}
+div.card:hover div.content {
+  display: block;
+}
