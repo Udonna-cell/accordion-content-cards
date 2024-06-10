@@ -11,7 +11,9 @@
   font-family: "Inter Bold";
   src: url("./Inter/static/Inter-Bold.ttf");
 }
-
+body {
+  background: hsl(233, 26%, 24%);
+}
 header {
   min-height: 100vh;
   display: flex;
